@@ -32,7 +32,7 @@ pipeline {
                     git commit -m "Updated Deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/rachit1a/a-reddit-clone-argocd main"
+                    sh "git push https://github.com/rachit1a/reddit-clone-argocd main"
                 }
             }
          }
