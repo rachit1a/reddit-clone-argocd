@@ -11,7 +11,7 @@ pipeline {
          }
          stage("Checkout from SCM") {
              steps {
-                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/rachit1a/reddit-clone-argocd/'
+                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/rachit1a/reddit-clone-argocd'
              }
          }
          stage("Update the Deployment Tags") {
